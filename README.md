@@ -4,6 +4,16 @@ This project tests a simple sentiment-based investment strategy for Indian equit
 
 The notebook collects company-level news headlines, scores sentiment using VADER, ranks stocks monthly and compares an equal-weight sentiment portfolio against Nifty 50.
 
+## Resume Summary
+
+Built an end-to-end alternative-data trading research pipeline for Indian equities, covering a 500-stock Nifty universe, Google News RSS headline collection, VADER sentiment scoring, monthly stock ranking, momentum/liquidity filtering and benchmarked portfolio backtesting.
+
+In the latest saved notebook run, the sentiment strategy ended approximately flat over the displayed Dec 2025-Jun 2026 backtest window, outperforming Nifty 50 by about 11 percentage points and Nifty 500 by about 6-7 percentage points.
+
+Resume bullet:
+
+> Developed a Python-based Indian equity sentiment strategy using Google News RSS, VADER NLP, Yahoo Finance market data and monthly rebalancing across a 500-stock Nifty universe; latest saved backtest finished roughly flat while Nifty 50 fell about 11% and Nifty 500 fell about 6-7%, demonstrating benchmark outperformance in the tested period.
+
 ## Project Idea
 
 The core question is:
@@ -33,6 +43,27 @@ The strategy uses:
 9. Apply momentum and liquidity filters.
 10. Calculate equal-weight portfolio returns.
 11. Compare with Nifty 50 and report performance metrics.
+
+## Results
+
+Latest saved notebook output:
+
+| Metric | Sentiment Strategy | Nifty 50 | Nifty 500 |
+| --- | ---: | ---: | ---: |
+| Backtest period shown | Dec 2025-Jun 2026 | Dec 2025-Jun 2026 | Dec 2025-Jun 2026 |
+| Approx. cumulative return | ~0% | ~-11% | ~-6% to -7% |
+| Approx. excess return vs strategy | Baseline | ~+11 percentage points | ~+6 to +7 percentage points |
+| Rebalancing | Monthly | Buy-and-hold benchmark | Buy-and-hold benchmark |
+
+Other quantified project details:
+
+- Tested on the Nifty 500 equity universe after cleaning NSE placeholder symbols.
+- Ranked the top 25 sentiment candidates each month.
+- Built a final equal-weight portfolio of up to 10 stocks after momentum and liquidity filters.
+- Used a minimum of 2 headlines per stock-month to reduce one-headline noise.
+- Compared strategy returns against both Nifty 50 and Nifty 500 benchmarks.
+
+The current results are based on the saved notebook output chart. Because the project uses live RSS and Yahoo Finance data, exact results can change when the notebook is rerun.
 
 ## Files
 
