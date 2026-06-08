@@ -4,16 +4,6 @@ This project tests a simple sentiment-based investment strategy for Indian equit
 
 The notebook collects company-level news headlines, scores sentiment using VADER, ranks stocks monthly and compares an equal-weight sentiment portfolio against Nifty 50.
 
-## Resume Summary
-
-Built an end-to-end alternative-data trading research pipeline for Indian equities, covering a 500-stock Nifty universe, Google News RSS headline collection, VADER sentiment scoring, monthly stock ranking, momentum/liquidity filtering and benchmarked portfolio backtesting.
-
-In the latest saved notebook run, the sentiment strategy ended approximately flat over the displayed Dec 2025-Jun 2026 backtest window, outperforming Nifty 50 by about 11 percentage points and Nifty 500 by about 6-7 percentage points.
-
-Resume bullet:
-
-> Developed a Python-based Indian equity sentiment strategy using Google News RSS, VADER NLP, Yahoo Finance market data and monthly rebalancing across a 500-stock Nifty universe; latest saved backtest finished roughly flat while Nifty 50 fell about 11% and Nifty 500 fell about 6-7%, demonstrating benchmark outperformance in the tested period.
-
 ## Project Idea
 
 The core question is:
@@ -52,8 +42,7 @@ Latest saved notebook output:
 | --- | ---: | ---: | ---: |
 | Backtest period shown | Dec 2025-Jun 2026 | Dec 2025-Jun 2026 | Dec 2025-Jun 2026 |
 | Approx. cumulative return | ~0% | ~-11% | ~-6% to -7% |
-| Approx. excess return vs strategy | Baseline | ~+11 percentage points | ~+6 to +7 percentage points |
-| Rebalancing | Monthly | Buy-and-hold benchmark | Buy-and-hold benchmark |
+
 
 Other quantified project details:
 
